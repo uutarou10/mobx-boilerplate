@@ -40,7 +40,8 @@ module.exports = {
   },
   devServer: {
     contentBase: './dist',
-    hot: true
+    hot: true,
+    overlay: true
   },
   plugins: [
     new HtmlWebpackPlugin({
