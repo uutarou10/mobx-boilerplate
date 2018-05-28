@@ -16,10 +16,14 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env'],
+            presets: [
+              '@babel/preset-env',
+              '@babel/preset-react'
+
+            ],
             plugins: [
-              require('babel-plugin-transform-react-jsx'),
-              require('babel-plugin-transform-decorators'),
+              // require('babel-plugin-transform-react-jsx'),
+              // require('babel-plugin-transform-decorators'),
               require('react-hot-loader/babel')
             ]
 
