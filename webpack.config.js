@@ -19,6 +19,7 @@ module.exports = {
             presets: ['@babel/preset-env'],
             plugins: [
               require('babel-plugin-transform-react-jsx'),
+              require('babel-plugin-transform-decorators'),
               require('react-hot-loader/babel')
             ]
 
