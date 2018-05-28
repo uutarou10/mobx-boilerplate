@@ -21,9 +21,8 @@ module.exports = {
               '@babel/preset-react'
             ],
             plugins: [
-              // require('babel-plugin-transform-react-jsx'),
-              // require('babel-plugin-transform-decorators'),
-              require('react-hot-loader/babel')
+              ['@babel/plugin-proposal-decorators', { legacy: true }],
+              'react-hot-loader/babel'
             ]
 
           }
